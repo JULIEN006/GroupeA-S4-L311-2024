@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "titre": "Premier Article",
+    "texte": "Ceci est le contenu du premier article.",
+    "image": "images/spotlight01.jpg"
+  },
+  {
+    "id": 2,
+    "titre": "Deuxième Article",
+    "texte": "Voici le contenu du deuxième article.",
+    "image": "images/spotlight02.jpg"
+  },
+  {
+    "id": 3,
+    "titre": "Troisième Article",
+    "texte": "Le troisième article contient ce texte.",
+    "image": "images/spotlight03.jpg"
+  }
+]
