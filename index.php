@@ -1,4 +1,4 @@
-<?php includ 'inc/inc.functions.php'; ?>
+<?php include 'inc/inc.functions.php'; ?>
 <!DOCTYPE HTML>
 <!--
 	Story by HTML5 UP
@@ -24,7 +24,7 @@
 				<?php include 'inc/tpls-footer.php'; ?>
 			</div>
 
-		<?php includes 'inc/inc.js.php'; ?>
+		<?php include 'inc/inc.js.php'; ?>
 
 	</body>
 </html>
