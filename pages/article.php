@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 'On');
+error_reporting(E_ALL | E_STRICT);?>
+<?php
 	$article = getArticleById(
 		array_key_exists('id', $_GET) ? $_GET['id'] : null
 	);

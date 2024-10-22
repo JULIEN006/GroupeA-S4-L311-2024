@@ -1,3 +1,6 @@
+<?php
+ini_set('display_errors', 'On');
+error_reporting(E_ALL | E_STRICT);?>
 <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 	<div class="content">
 		<h1>Mon [ blog ].</h1>
