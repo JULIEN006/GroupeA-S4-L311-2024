@@ -1,3 +1,7 @@
+<?php
+ini_set('display_errors', 'On');
+error_reporting(E_ALL | E_STRICT);?>
+
 <?php include 'inc/inc.functions.php'; ?>
 <!DOCTYPE HTML>
 <!--
