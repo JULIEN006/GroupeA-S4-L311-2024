@@ -9,7 +9,7 @@ error_reporting(E_ALL | E_STRICT);?>
     define('TL_ROOT', dirname(__DIR__));
     define('LOGIN', 'UEL311');
     define('PASSWORD', 'U31311');
-    define('DB_ARTICLES', TL_ROOT.'/dbal/articles.json');
+    define('DB_ARTICLE', TL_ROOT.'/db/articles.json');
 
     function connectUser($login = null, $password = null){
         if(!is_null($login) && !is_null($password)){
@@ -37,7 +37,7 @@ error_reporting(E_ALL | E_STRICT);?>
         return false;
     }
 
-    function getPageTemplate($page = null){
+    function getPagesTemplate($page = null){
         $fichier = TL_ROOT.'/pages/'.(is_null($page) ? 'index.php' : $page.'.php');
 
         if(!file_exists($fichier)){
@@ -48,7 +48,7 @@ error_reporting(E_ALL | E_STRICT);?>
     }
 
     function getArticlesFromJson(){
-        if(file_exist(DB_ARTICLE)) {
+        if(file_exists(DB_ARTICLE)) {
             $contenu_json = file_get_contents(DB_ARTICLE);
             return json_decode($contenu_json, true);
         }
