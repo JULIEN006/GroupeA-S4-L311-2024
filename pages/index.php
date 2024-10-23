@@ -15,6 +15,7 @@ error_reporting(E_ALL | E_STRICT);?>
 </section>
 
 <?php 
+	include '../inc/inc.functions.php';
 	$_articles = getArticlesFromJson();
 
 	if($_articles && count($_articles)){
