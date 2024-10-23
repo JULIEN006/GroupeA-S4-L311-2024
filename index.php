@@ -14,7 +14,7 @@ error_reporting(E_ALL | E_STRICT);?>
 		<title>Story by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<?php include 'inc/inc.css.php'; ?>
+		<?php include 'inc/inc.style.php'; ?>
 	</head>
 	<body class="is-preload">
 
@@ -28,7 +28,7 @@ error_reporting(E_ALL | E_STRICT);?>
 				<?php include 'inc/tpl-footer.php'; ?>
 			</div>
 
-		<?php include 'inc/inc.js.php'; ?>
+		<?php include 'inc/inc.javascript.php'; ?>
 
 	</body>
 </html>
