@@ -3,7 +3,7 @@ ini_set('display_errors', 'On');
 error_reporting(E_ALL | E_STRICT);?>
 <?php 
 	$message = null;
-	if($_SERVER["RQUEST_METHOD"] == "POST"){
+	if($_SERVER["REQUEST_METHOD"] == "POST"){
 	    if(array_key_exists('login', $_POST) && array_key_exists('password', $_POST)){
 	    	if(!empty($_POST['login']) && !empty($_POST['password'])){
 	    		$_SESSION['User'] = connectUser($_GET['login'], $_POST['password']);
