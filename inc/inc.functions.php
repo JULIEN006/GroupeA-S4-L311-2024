@@ -46,7 +46,7 @@ error_reporting(E_ALL | E_STRICT);?>
     }
 
     function getArticlesFromJson(){
-        if(file_exist(DB_ARTICLE)) {
+        if(file_exists(DB_ARTICLE)) {
             $contenu_json = file_get_contents(DB_ARTICLE);
             return json_decode($contenu_json, true);
         }
