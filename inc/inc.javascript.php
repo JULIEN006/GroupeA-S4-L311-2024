@@ -1,7 +1,5 @@
-<?php
-ini_set('display_errors', 'On');
-error_reporting(E_ALL | E_STRICT);?>
 <!-- Scripts -->
+<!--Inclusion des scripts JavaScript nécessaires pour le fonctionnement de la page -->
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.scrollex.min.js"></script>
 <script src="assets/js/jquery.scrolly.min.js"></script>
