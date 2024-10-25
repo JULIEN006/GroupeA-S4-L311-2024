@@ -21,6 +21,7 @@ error_reporting(E_ALL | E_STRICT);?>
 	}	
 ?>
 
+
 <section class="wrapper style1 align-center">
 	<div class="inner">
 		<div class="index align-left">
