@@ -1,7 +1,8 @@
 <?php
 //Affichage des erreurs de debogage
 ini_set('display_errors', 'On');
-error_reporting(E_ALL | E_STRICT);?>
+error_reporting(E_ALL | E_STRICT);
+?>
 <!--section de la banniere-->
 <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 	<div class="content">
@@ -16,9 +17,7 @@ error_reporting(E_ALL | E_STRICT);?>
 	</div>
 </section>
 
-<?php 
-	
-	
+<?php
 	//recuperation des articles du fichier json
 	$_articles = getArticlesFromJson();
 
@@ -39,7 +38,7 @@ error_reporting(E_ALL | E_STRICT);?>
 						</ul>
 					</div>
 					<div class="image"> <!--conteneur iamge article-->
-						<img src="<?php echo $art_icle['image'];?>" alt="" />
+						<img src="<?php echo $article['image'];?>" alt="" />
 					</div>
 				</section>
 
