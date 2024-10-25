@@ -25,7 +25,7 @@ error_reporting(E_ALL | E_STRICT);?>
 
     function setDisconnectUser(){
          unset($_SESSION['User']);
-         sessions_destroy();
+         session_destroy();
     }
 
     function isConnected(){
