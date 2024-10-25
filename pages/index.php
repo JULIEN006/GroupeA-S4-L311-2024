@@ -17,8 +17,8 @@ error_reporting(E_ALL | E_STRICT);?>
 </section>
 
 <?php 
-
-	include '../inc/inc.functions.php';
+	
+	
 	//recuperation des articles du fichier json
 	$_articles = getArticlesFromJson();
 
@@ -31,9 +31,9 @@ error_reporting(E_ALL | E_STRICT);?>
 			?>
 				<section class="spotlight style1 orient-<?php echo $classCss;?>  content-align-left image-position-center onscroll-image-fade-in" id="first">
 					<div class="content">
-						<!-- Titre de l'article -->
+						<!-- Titre et du texte de l'article -->
 						<h2><?php echo $article['titre'];?></h2>
-						<p><?php echo $article['titre'];?></p>
+						<p><?php echo $article['texte'];?></p>
 						<ul class="actions stacked">
 							<li><a href="?page=article&id=<?php echo $article['id'];?>" class="button">Lire la suite</a></li>
 						</ul>

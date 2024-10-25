@@ -4,5 +4,5 @@ error_reporting(E_ALL | E_STRICT);?>
 <?php
 	setDisconnectUser();
 
-	header('Location:indx.php');
+	header('Location:index.php');
 ?>
