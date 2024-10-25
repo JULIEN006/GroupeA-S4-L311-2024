@@ -22,12 +22,12 @@ error_reporting(E_ALL | E_STRICT);?>
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
-				<?php 
+				<?php
 				// fonction d'appel pour recuperer la template de la page
 					getPagesTemplate(
 						//Verifie sur le parametre "page" existe
 						array_key_exists('page', $_GET) ? $_GET['page'] : null
-					); 
+					);
 				?>
 				<!--Inclure le footer template-->
 				<?php include 'inc/tpl-footer.php'; ?>

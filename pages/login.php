@@ -9,7 +9,7 @@ error_reporting(E_ALL | E_STRICT);?>
 	    if(array_key_exists('login', $_POST) && array_key_exists('password', $_POST)){
 			//Verifie que les champs ne soient pas vides
 	    	if(!empty($_POST['login']) && !empty($_POST['password'])){
-	    		$_SESSION['User'] = connectUser($_GET['login'], $_POST['password']);
+	    		$_SESSION['User'] = connectUser($_POST['login'], $_POST['password']);
 				//verifie la connexion
 	    		if(!is_null($_SESSION['User'])){
 	    			header("Location:index.php"); //redirection vers la page "index.php"
@@ -21,6 +21,7 @@ error_reporting(E_ALL | E_STRICT);?>
 	}	
 ?>
 
+
 <section class="wrapper style1 align-center">
 	<div class="inner">
 		<div class="index align-left">
@@ -28,7 +29,7 @@ error_reporting(E_ALL | E_STRICT);?>
 				<header>
 					<h3>Se connecter</h3>
 					<!--lien vers la page d'accueil-->
-					<a href="index.php" class="button big wide smooth-scroll-middle">Revenir à l'accueil</a></li> 
+					<a href="index.php" class="button big wide smooth-scroll-middle">Revenir à l'accueil</a>
 				</header>
 				<div class="content">*
 					<!--Si le message d'erreur existe -affiche le -->
