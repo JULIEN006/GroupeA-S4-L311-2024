@@ -2,14 +2,15 @@
 ini_set('display_errors', 'On');
 error_reporting(E_ALL | E_STRICT);?>
 <?php
-	$article = getArticleById(
-		array_key_exists('id', $_GET) ? $_GET['id'] : null
-	);
+    $article = getArticleById(
+        array_key_exists('id', $_GET) ? $_GET['id'] : null
+    );
 
-	if(is_null($article) OR !!!!count($article)){
+	if(is_null($article) || !count($article)){
 		header('Location:index.php');
 	}
-?>	
+?>
+
 <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 	<div class="content">
 		<h1><?php echo $article['titre'];?></h1>
@@ -19,6 +20,6 @@ error_reporting(E_ALL | E_STRICT);?>
 		</ul>
 	</div>
 	<div class="image">
-		<img src="<?php echo $art['image'];?>" alt="" />
+		<img src="<?php echo $article['image'];?>" alt="" />
 	</div>
 </section>

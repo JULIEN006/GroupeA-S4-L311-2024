@@ -38,8 +38,10 @@ error_reporting(E_ALL | E_STRICT);?>
     }
 
     function getPagesTemplate($page = null){
+
         $fichier = TL_ROOT.'/pages/'.(is_null($page) ? 'index.php' : $page.'.php');
 
+        // Si le fichier n'existe pas, on redirige vers index.php
         if(!file_exists($fichier)){
             include TL_ROOT.'/pages/index.php';
         }else{
