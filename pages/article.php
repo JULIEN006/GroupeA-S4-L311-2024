@@ -11,6 +11,7 @@ error_reporting(E_ALL | E_STRICT);?>
 		header('Location:index.php');
 	}
 ?>
+
 <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 	<div class="content">
 		<h1><?php echo $article['titre'];?></h1>
