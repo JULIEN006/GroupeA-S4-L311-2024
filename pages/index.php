@@ -2,6 +2,7 @@
 //Affichage des erreurs de debogage
 ini_set('display_errors', 'On');
 error_reporting(E_ALL | E_STRICT);
+
 ?>
 <!--section de la banniere-->
 <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
@@ -26,7 +27,6 @@ error_reporting(E_ALL | E_STRICT);
 		$compteur = 1; //initialisation du compteur
 		foreach($_articles as $article){
 			$classCss = ($compteur % 2 == 0 ? 'left' : 'right');
-			##$compteur++;
 			?>
 				<section class="spotlight style1 orient-<?php echo $classCss;?>  content-align-left image-position-center onscroll-image-fade-in" id="first">
 					<div class="content">
@@ -37,7 +37,7 @@ error_reporting(E_ALL | E_STRICT);
 							<li><a href="?page=article&id=<?php echo $article['id'];?>" class="button">Lire la suite</a></li>
 						</ul>
 					</div>
-					<div class="image"> <!--conteneur iamge article-->
+					<div class="image"> <!--conteneur image article-->
 						<img src="<?php echo $article['image'];?>" alt="" />
 					</div>
 				</section>
