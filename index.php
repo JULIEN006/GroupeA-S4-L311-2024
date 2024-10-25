@@ -16,7 +16,7 @@ error_reporting(E_ALL | E_STRICT);?>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <!-- Inclut un fichier css externe-->
-		<?php include 'inc/inc.css.php'; ?> 
+		<?php include 'inc/inc_css.php'; ?> 
 	</head>
 	<body class="is-preload">
 
@@ -33,7 +33,7 @@ error_reporting(E_ALL | E_STRICT);?>
 				<?php include 'inc/tpl-footer.php'; ?>
 			</div>
 		<!--Inclure le fichier JS-->
-		<?php include 'inc/inc.js.php'; ?>
+		<?php include './inc/inc_js.php'; ?>
 
 	</body>
 </html>
